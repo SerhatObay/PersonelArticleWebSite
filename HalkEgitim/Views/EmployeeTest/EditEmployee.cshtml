@@ -1,0 +1,18 @@
+﻿@model HalkEgitim.Controllers.Class1
+
+@{
+    ViewData["Title"] = "EditEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Kişi Güncelleme</h1>
+<form method="post">
+    <label>ID</label>
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    <label>Kişi Adı Soyadı</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+</form>
+
